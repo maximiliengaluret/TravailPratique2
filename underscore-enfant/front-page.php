@@ -57,6 +57,7 @@ get_header();
      $query1->the_post();
      echo'<div class="flex">';
      echo '<h4>' . get_the_title() . '</h4>';
+     the_post_thumbnail('thumbnail');
      echo'</div>';
  }
 

@@ -35,7 +35,7 @@ get_header();
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
                 $temp=get_the_date('m')-8;
-                echo '<h2 style="grid-area: '.get_the_date('d') .'/'.$temp.'" >' . substr(get_the_title(),0,20) . ' ' . get_the_date('d m Y') . '</h2>';
+                echo '<a href="'.get_post_permalink().'" style="grid-area: '.get_the_date('d') .'/'.$temp.'" >' . substr(get_the_title(),0,20) . ' ' . get_the_date('d m Y') . '</a>';
                 
 
 			endwhile;
